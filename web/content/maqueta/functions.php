@@ -4,12 +4,15 @@ ini_set('display_errors', '1');
 switch($_SERVER['SERVER_NAME']){
     case "epdln.dev.gamol.net": //Cambiar path (URL DEV).
         $rutaProyecto = "/maqueta/";
+        //echo "string 1";
         break;
 	case "localhost"://Cambiar path (URL localhost).
-        $rutaProyecto = "/EPDLN/web/content/maqueta/";
+        $rutaProyecto = "/proyectos/epdln/web/content/maqueta/";
+         // echo "string 2";
         break;
     default:
         $rutaProyecto = "/web/content/maqueta/";
+         // echo "string 3";
 }
 
 $srvr = "http://".$_SERVER['HTTP_HOST'].$rutaProyecto;

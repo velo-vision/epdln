@@ -1,23 +1,3 @@
-<?php 
-/*<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
-<head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-<title><?php bloginfo('name'); ?> <?php if ( is_single() ) { ?> &raquo; Blog Archive <?php } ?> <?php wp_title(); ?></title>
-<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" /> <!-- leave this for stats -->
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-<?php wp_head(); ?>
-</head>
-<body>
-<div id="wrap">
-<div id="header">
-<div id="logo"><h1><a href="<?php echo get_option('home'); ?>/"></a></h1>
-</div>
-</div>*/
- ?>
-
 <!DOCTYPE html>
 <html lang="es-MX">
     <head>
@@ -31,13 +11,13 @@
 	    <link rel="alternate" hreflang="es-mx" href="">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-        <link rel="apple-touch-icon" href="<?php echo CARPETA; ?>apple-touch-icon.png">
-		<link rel="icon" type="image/png" href="<?php echo CARPETA; ?>favicon.png">
-		<link rel="shortcut icon" type="image/x-icon" href="<?php echo CARPETA; ?>favicon.ico">
+        <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
         
-        <link rel="apple-touch-icon" href="<?php echo CARPETA; ?>apple-touch-icon.png">
-		<link rel="icon" type="image/png" href="<?php echo CARPETA; ?>favicon.png">
-		<link rel="shortcut icon" type="image/x-icon" href="<?php echo CARPETA; ?>favicon.ico">
+        <link rel="apple-touch-icon" href="<?php bloginfo('template_url'); ?>/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="<?php bloginfo('template_url'); ?>/favicon.png">
+		<link rel="shortcut icon" type="image/x-icon" href="<?php bloginfo('template_url'); ?>/favicon.ico">
         <link href='https://fonts.googleapis.com/css?family=Play|Ubuntu:300' rel='stylesheet' type='text/css'>
         <meta property="og:locale" content="es_MX">
 		<meta property="og:type" content="website">
@@ -53,23 +33,23 @@
 		<meta name="twitter:image" content="imagen">
 
         <!-- StylesWith B o o t s t r a p -->
-        <link rel="stylesheet" href="<?php echo CARPETA; ?>css/components/normalize.css">
-        <link rel="stylesheet" href="<?php echo CARPETA; ?>css/components/bootstrap/bootstrap.min.css">
-        <link rel="stylesheet" href="<?php echo CARPETA; ?>css/layout/css/custom.min.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/components/normalize.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/components/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/layout/css/custom.min.css">
     
 
 
         <!-- Componentes -->
-        <link rel="stylesheet" href="<?php echo CARPETA; ?>css/components/animate.css">
-        <link rel="stylesheet" href="<?php echo CARPETA; ?>css/components/font-awesome.min.css">
-        <link rel="stylesheet" href="<?php echo CARPETA; ?>css/components/hover-min.css">
-        <link rel="stylesheet" href="<?php echo CARPETA; ?>css/components/jquery.bxslider.min.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/components/animate.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/components/font-awesome.min.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/components/hover-min.css">
+        <link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/css/components/jquery.bxslider.min.css">
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat|Oxygen" rel="stylesheet">
 
         
-        <script src="<?php echo CARPETA; ?>js/vendor/modernizr-2.8.3.min.js"></script>
+        <script src="<?php bloginfo('template_url'); ?>/js/vendor/modernizr-2.8.3.min.js"></script>
         
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -83,7 +63,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-xs-6 col-sm-3 col-md-3">
-                        <a href="<?php echo CARPETA; ?>"><img class="logo" src="<?php echo CARPETA; ?>img/logo/logo-yellow.png" alt="Logo"></a>
+                        <a href="<?php bloginfo('template_url'); ?>/"><img class="logo" src="<?php bloginfo('template_url'); ?>/img/logo/logo-yellow.png" alt="Logo"></a>
                     </div>
                     <div class="col-xs-6 col-sm-9 col-md-9">
                         <div class="row">
@@ -121,7 +101,7 @@
                                                 <a href="" class="facebook hvr-float"><i class="fa fa-facebook" aria-hidden="true"></i>
                                                 <a href="" class="twitter  hvr-float"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                                                 <a href="" class="youtube  hvr-float"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                                                <img class="logo" src="<?php echo CARPETA; ?>img/logo/logo.png" alt="Logo">
+                                                <img class="logo" src="<?php bloginfo('template_url'); ?>/img/logo/logo.png" alt="Logo">
                                                 <p>TELÉFONO: +52 (55) 5267 6400</p>
                                             </div>
 
@@ -135,7 +115,7 @@
                                             <li class="hidden-xs hidden-sm"><a href="" class="twitter  hvr-float"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
                                             <li class="hidden-xs hidden-sm"><a href="" class="youtube  hvr-float"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
                                         </ul>
-                                        <img class="logo" src="<?php echo CARPETA; ?>img/logo/logo.png" alt="Logo">
+                                        <img class="logo" src="<?php // bloginfo('template_url'); ?>/img/logo/logo.png" alt="Logo">
                                         <p>TELÉFONO: +52 (55) 5267 6400</p>
                                     </div>-->
                                 </div><!--end.menuwrap-->

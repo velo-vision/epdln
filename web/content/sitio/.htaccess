@@ -2,11 +2,11 @@
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
-RewriteBase /epdln/web/content/sitio/
+RewriteBase /proyectos/epdln/web/content/sitio/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /epdln/web/content/sitio/index.php [L]
+RewriteRule . /proyectos/epdln/web/content/sitio/index.php [L]
 </IfModule>
 
 # END WordPress
