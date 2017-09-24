@@ -1,3 +1,4 @@
+
         
         </main><!-- end.Main -->
         <div style="display: inline-block;" class="up hidden-xs hidden-sm">
@@ -18,7 +19,7 @@
                     </div>
                     <div class="col-xs-12 col-sm-9 col-md-9">
                         <ul class="menufooter">
-                            <li><a href="">Encuestas</a></li>
+                            <li><a href="<?php echo CARPETA; ?>encuesta">Encuestas</a></li>
                             <li><a href="">Contacta al Poder de los Números</a></li>
                             <li><a href="">Aviso de Privacidad</a></li>
                         </ul>

@@ -87,16 +87,16 @@ require_once('functions.php');
                                         <input type='checkbox'/>
                                         <label><i class="fa fa-bars" aria-hidden="true"></i></label>
                                         <ul>
-                                            <li><a class="hvr-underline-from-center" href="<?php echo CARPETA; ?>/nosotros">Nosotros</a></li>
-                                            <li><a class="hvr-underline-from-center" href='#'>Perfil del contador</a>
+                                            <li><a class="hvr-underline-from-center" href="<?php echo CARPETA; ?>nosotros">Nosotros</a></li>
+                                            <li><a class="hvr-underline-from-center" href="<?php echo CARPETA; ?>perfil">Perfil del contador</a>
                                                 <ul class='menus'>
-                                                    <li><a href='#'>Habilidades y Desarrollo de un contador</a></li>
-                                                    <li><a href='#'>Tips para el estudiante</a></li>
-                                                    <li><a href='#'>Contadores de éxito</a></li>
-                                                    <li><a href='#'>FAQ'S</a></li>
+                                                    <li><a href="<?php echo CARPETA; ?>perfil">Habilidades y Desarrollo de un contador</a></li>
+                                                    <li><a href="<?php echo CARPETA; ?>perfil">Tips para el estudiante</a></li>
+                                                    <li><a href="<?php echo CARPETA; ?>perfil">Contadores de éxito</a></li>
+                                                    <li><a href="<?php echo CARPETA; ?>perfil">FAQ'S</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a class="hvr-underline-from-center" href='#'>Artículos</a></li>
+                                            <li><a class="hvr-underline-from-center" href="<?php echo CARPETA; ?>articulos">Artículos</a></li>
                                             <li><a class="hvr-underline-from-center" href='#'>Infografías</a></li>
                                             <li><a class="hvr-underline-from-center" href='#'>Videos</a></li>
                                             <li><a class="hvr-underline-from-center" href='#'>Contacto</a></li>

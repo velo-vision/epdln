@@ -67,13 +67,20 @@ $tituloSocial = get_field('titulo_redes_sociales',$id_Home);
 	<section class="block">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
+				<?php global $post; 
+					$args = array( "posts_per_page" => 1, "offset"=> 0, "category" => 4 ); 
+					$myposts = get_posts( $args );?>
 				<article>
-					<img src="<?php bloginfo('template_url'); ?>/img/imgPrueba/Home_Slider_Infografias.png" alt="background">
-					<div class="col-xs-12 col-sm-12 col-md-5 cont-article">
-						<h4>INFOGRAFÍAS</h4>
-						<h3>¿Cómo trabajar bajo presión? (Y no morir en el intento)</h3>
-						<a href="" class="btn-yellow hvr-grow-shadow">Leer Artículo</a>
-					</div>
+					<?php foreach( $myposts as $post ) : setup_postdata($post); ?>
+					<?php if (has_post_thumbnail()) {
+              			$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?> 
+							<img src="<?php echo $url; ?>" alt="<?php the_title(); ?> "/><?php }?>
+							<div class="col-xs-12 col-sm-12 col-md-5 cont-article">
+								<h4><?php echo the_category() ?></h4>
+								<h3><?php the_title(); ?></h3>
+								<a href="<?php the_permalink($post->ID); ?>" class="btn-yellow hvr-grow-shadow">Leer Artículo</a>
+							</div>
+					<?php endforeach; ?>
 				</article>
 			</div>
 		</div>
@@ -81,19 +88,25 @@ $tituloSocial = get_field('titulo_redes_sociales',$id_Home);
 	<section class="block">
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 col-md-12">
+				<?php global $post; 
+					$args = array( "posts_per_page" => 1, "offset"=> 0, "category" => 5 ); 
+					$myposts = get_posts( $args );?>
 				<article>
-					<img src="<?php bloginfo('template_url'); ?>/img/imgPrueba/Home_Slider_Videos.png" alt="background">
-					<div class="col-xs-12 col-sm-12 col-md-offset-7 col-md-5 cont-article">
-						<h4>VIDEOS</h4>
-						<h3>Cómo trámitar tu RFC si eres menor de edad</h3>
-						<a href="" class="btn-yellow hvr-grow-shadow">Leer Artículo</a>
-					</div>
+					<?php foreach( $myposts as $post ) : setup_postdata($post); ?>
+					<?php if (has_post_thumbnail()) {
+              			$url = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?> 
+							<img src="<?php echo $url; ?>" alt="<?php the_title(); ?> "/><?php }?>
+							<div class="col-xs-12 col-sm-12 col-md-offset-7 col-md-5 cont-article">
+								<h4><?php echo the_category() ?></h4>
+								<h3><?php the_title(); ?></h3>
+								<a href="<?php the_permalink($post->ID); ?>" class="btn-yellow hvr-grow-shadow">Leer Artículo</a>
+							</div>
+					<?php endforeach; ?>
 				</article>
 			</div>
 		</div>
 	</section>
 </div>
-
 
 			<section class="socialMedia">
 				<div class="container">
@@ -116,60 +129,18 @@ $tituloSocial = get_field('titulo_redes_sociales',$id_Home);
 
 						</div>
 						<div class="col-md-5">
-							
-
+							<a class="twitter-timeline"  href="https://twitter.com/search?q=%40elpoderdelosnum" data-widget-id="910962602662141952">Tweets sobre @elpoderdelosnum</a>
+            					<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+            					</script>
 						</div>
 					</div>
 				</div>
 			</section>
-
-			<section class="school">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<article class"">
-								<img src="<?php bloginfo('template_url'); ?>/img/imgPrueba/Home_SeccionPlaticasFooter.jpg" alt="background">
-								
-									<div class="col-md-12 cont-article school1">
-										<h3>¿Te interesa que vayamos a tu escuela?</h3>
-										<h4>No dudes en contactarnos</h4>
-										<a href="" class="btn-yellow hvr-grow-shadow">Quiero información</a>
-									</div>
-								
-							</article>
-						</div>
-						<div class="col-md-6">
-							<article class"">
-								<img src="<?php bloginfo('template_url'); ?>/img/imgPrueba/Home_SeccionEncuestasFooter.jpg" alt="background">
-								
-									<div class="col-md-12 cont-article school2">
-										<h3>¿Ya visitamos tu escuela?</h3>
-										<h4>Por favor, responde esta encuesta</h4>
-										<a href="" class="btn-pink hvr-grow-shadow">Ir a encuesta</a>
-									</div>
-								
-							</article>
-						</div>
-
-					</div>
-				</div>
-
-			</section>
-
-			<section class="newletter">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12 text-center">
-							<h2>Suscríbete al Newletter</h2>
-							<p>Me interesa recibir información del mundo de la contabilidad.</p>
-
-						</div>
-
-					</div>
-				</div>
-
-			</section>
-
+			
 <?php //get_sidebar(); ?>
 
+
+  
+  
+<?php include('footer2.php'); ?>
 <?php get_footer(); ?>

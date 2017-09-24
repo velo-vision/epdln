@@ -19,6 +19,13 @@ $(document).ready(function(){
 		slideMargin: 10
 	});
 
+	$('#slider-perfil').bxSlider({
+		minSlides: 2,
+		maxSlides: 4,
+		slideWidth: 220,
+		slideMargin: 10
+	});
+
 
 	$('.up').click(function(){
 		$('body, html').animate({
@@ -33,4 +40,21 @@ $(document).ready(function(){
 			$('.up').slideUp(300);
 		};
 	});
+
+	/*******************************
+	* ACCORDION WITH TOGGLE ICONS
+	*******************************/
+	function toggleIcon(e) {
+		$(e.target)
+			.prev('.panel-heading')
+			.find(".more-less")
+			.toggleClass('glyphicon-plus glyphicon-minus');
+	}
+	$('.panel-group').on('hidden.bs.collapse', toggleIcon);
+	$('.panel-group').on('shown.bs.collapse', toggleIcon);
+
+
+
+
 });
+
